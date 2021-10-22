@@ -1,0 +1,36 @@
+{
+  "name": "eventrpc",
+  "version": "0.0.25",
+  "description": "Emit server events via HTTP and JSON RPC",
+  "author": "Chris <chris@incept.asia>",
+  "license": "MIT",
+  "homepage": "https://github.com/cblanquera/EventRPC",
+  "bugs": {
+    "url": "https://github.com/cblanquera/EventRPC/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cblanquera/EventRPC.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "build": "tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@inceptjs/framework": "^0.0.25",
+    "jsonrpc-lite": "^2.0.7",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.4",
+    "@types/shortid": "^0.0.29",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.2",
+    "node-fetch": "^2.6.5"
+  }
+}
