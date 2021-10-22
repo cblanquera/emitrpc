@@ -1,15 +1,15 @@
-# EventRPC React Plugin
+# Emit RPC React Plugin
 
-An Event RPC React hook
+An Emit RPC React hook
 
 ## Install
 
 ```bash
-$ npm i eventrpc-react
+$ npm i emitrpc-react
 
 or
 
-$ yarn add eventrpc-react
+$ yarn add emitrpc-react
 ```
 
 ### Basics
@@ -20,10 +20,10 @@ First wrap the `EmitterContext` around the `<App />`. Pass the
 ```js
 import React from 'react'
 import { hydrate } from 'react-dom'
-import { RPCEmitter } from 'eventrpc'
-import { EmitterContext } from 'eventrpc'
+import { RPCEmitter } from 'emitrpc'
+import { EmitterContext } from 'emitrpc-react'
 
-const emitter = new RPCEmitter('/eventrpc')
+const emitter = new RPCEmitter('/emitrpc')
 
 hydrate(
   (
@@ -35,14 +35,14 @@ hydrate(
 )
 ```
 
-Next in a component use the hook `useEventRPC()` to call events 
+Next in a component use the hook `useEmit()` to call events 
 remotely. There's no need to wrap this in `useEffect()`.
 
 ```js
-import { useEventRPC } from 'eventrpc-react'
+import { useEmit } from 'emitrpc-react'
 
 export default function About() {
-  const response = useEventRPC('company-detail', { id: 1 })
+  const response = useEmit('company-detail', { id: 1 })
   if (!response) {
     return <h1>Loading...</h1>
   }

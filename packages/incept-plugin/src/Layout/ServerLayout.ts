@@ -1,5 +1,5 @@
 import React from 'react'
-import { EmitterContext } from 'eventrpc-react';
+import { EmitterContext } from 'emitrpc-react';
 import app from 'inceptjs'
 
 export default function ServerLayout(props: Record<string, any>) {
@@ -7,7 +7,7 @@ export default function ServerLayout(props: Record<string, any>) {
     EmitterContext.Provider, 
     //@ts-ignore Type 'Application' is not assignable to type 'null'.
     //           but that is the default value given in 
-    //           `React.createContext()` in `eventrpc-react`
+    //           `React.createContext()` in `emitrpc-react`
     { value: app }, 
     props.children
   )

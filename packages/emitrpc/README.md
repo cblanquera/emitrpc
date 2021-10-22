@@ -1,22 +1,22 @@
-# EventRPC
+# Emit RPC
 
 Event Emitter Implementation for the JSON-RPC 2.0 Specification
 
 ## Install
 
 ```bash
-$ npm i eventrpc
+$ npm i emitrpc
 
 or
 
-$ yarn add eventrpc
+$ yarn add emitrpc
 ```
 
 ### Basics
 
 ```js
 // server.js
-import { EventEmitter, middleware } from 'eventrpc'
+import { EventEmitter, middleware } from 'emitrpc'
 
 const emitter = new EventEmitter
 emitter.on('foo', (req, res) => {
@@ -30,9 +30,9 @@ this.server.listen(3000)
 
 ```js
 // client.js
-import { RPCEmitter } from 'eventrpc'
+import { RPCEmitter } from 'emitrpc'
 
-const emitter = new RPCEmitter('http://127.0.0.1:3000/eventrpc')
+const emitter = new RPCEmitter('http://127.0.0.1:3000/emitrpc')
 const res = await clientEmitter.emit('company-detail', { name: 'bar' })
 
 console.log(res.body.results.name) //--> bar

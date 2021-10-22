@@ -1,5 +1,5 @@
 import { Application } from 'inceptjs'
-import { middleware } from 'eventrpc'
+import { middleware } from 'emitrpc'
 
 export default function(app: Application) {
   app.use(middleware(app))

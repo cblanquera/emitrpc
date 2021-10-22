@@ -4,7 +4,7 @@ import Exception from './Exception'
 
 const EmitterContext = React.createContext(null);
 
-function useEventRPC(event: string, req: Record<string, any>|Request) {
+function useEmit(event: string, req: Record<string, any>|Request) {
   Exception.require(
     typeof event === 'string', 
     'Argument 1 expected String'
@@ -53,5 +53,5 @@ function useEventRPC(event: string, req: Record<string, any>|Request) {
 
 export {
   EmitterContext,
-  useEventRPC
+  useEmit
 }

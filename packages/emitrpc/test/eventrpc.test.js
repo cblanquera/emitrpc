@@ -31,7 +31,7 @@ describe('Emitter Tests', () => {
     this.server.listen(3000)
 
     //now make a client emitter
-    const clientEmitter = new RPCEmitter('http://127.0.0.1:3000/eventrpc', { fetch })
+    const clientEmitter = new RPCEmitter('http://127.0.0.1:3000/emitrpc', { fetch })
     //emit the same `company-detail`
     const res1 = await clientEmitter.emit('company-detail', { id: 1 })
     //check to see if the same

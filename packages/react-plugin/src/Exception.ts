@@ -1,3 +1,3 @@
 import { Exception } from '@inceptjs/framework';
 
-export default class EventRPCReactException extends Exception {}
+export default class EmitRPCReactException extends Exception {}

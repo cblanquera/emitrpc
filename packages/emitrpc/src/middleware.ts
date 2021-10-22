@@ -6,7 +6,7 @@ const defaultNext = (error: Error) => { if(error) throw error };
 
 export default function createMiddleware(
   serverEmitter: EventEmitter = new EventEmitter,
-  routepath = '/eventrpc'
+  routepath = '/emitrpc'
 ): Function {
   function Middleware(
     im: IncomingMessage, 

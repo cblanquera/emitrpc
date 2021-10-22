@@ -1,35 +1,35 @@
-# EventRPC Incept JS Plugin
+# Emit RPC Incept JS Plugin
 
 An Event RPC Incept plugin
 
 ## Install
 
 ```bash
-$ npm i eventrpc-incept
+$ npm i emitrpc-incept
 
 or
 
-$ yarn add eventrpc-incept
+$ yarn add emitrpc-incept
 ```
 
 ### Basics
 
-In your `package.json` add `eventrpc-incept` like the following.
+In your `package.json` add `emitrpc-incept` like the following.
 
 ```json
 {
-  "incept": [ "eventrpc-incept" ]
+  "incept": [ "emitrpc-incept" ]
 }
 ```
 
-Next in a component use the hook `useEventRPC()` to call events 
+Next in a component use the hook `useEmit()` to call events 
 remotely. There's no need to wrap this in `useEffect()`.
 
 ```js
-import { useEventRPC } from 'eventrpc-react'
+import { useEmit } from 'emitrpc-react'
 
 export default function About() {
-  const response = useEventRPC('company-detail', { id: 1 })
+  const response = useEmit('company-detail', { id: 1 })
   if (!response) {
     return <h1>Loading...</h1>
   }

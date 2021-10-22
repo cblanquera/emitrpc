@@ -1,16 +1,16 @@
 {
-  "name": "eventrpc",
+  "name": "emitrpc",
   "version": "0.0.25",
   "description": "Emit server events via HTTP and JSON RPC",
   "author": "Chris <chris@incept.asia>",
   "license": "MIT",
-  "homepage": "https://github.com/cblanquera/EventRPC",
+  "homepage": "https://github.com/cblanquera/emitrpc",
   "bugs": {
-    "url": "https://github.com/cblanquera/EventRPC/issues"
+    "url": "https://github.com/cblanquera/emitrpc/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cblanquera/EventRPC.git"
+    "url": "git+https://github.com/cblanquera/emitrpc.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
