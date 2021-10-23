@@ -1,6 +1,6 @@
 {
   "name": "emitrpc-incept",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "Event RPC InceptJS plugin",
   "author": "Chris <chris@incept.asia>",
   "license": "MIT",
@@ -21,13 +21,14 @@
   "files": [
     "dist"
   ],
+  "incept": [ "./dist" ],
   "peerDependencies": {
-    "inceptjs": "^0.0.25",
+    "inceptjs": "^0.0.26",
     "react": "^17.0.2"
   },
   "dependencies": {
-    "emitrpc": "^0.0.25",
-    "emitrpc-react": "^0.0.25"
+    "emitrpc": "^0.0.26",
+    "emitrpc-react": "^0.0.26"
   },
   "devDependencies": {
     "@types/react": "^17.0.31",
